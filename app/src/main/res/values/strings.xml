@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Homework Planner</string>
+    <string name="all_label">All</string>
+    <string name="pending_label">Pending</string>
+    <string name="done_label">Done</string>
+    <string name="course_label">Course</string>
+    <string name="priority_label">Priority</string>
+    <string name="add_assignment_label">New Assignment</string>
+    <string name="add_course_button">Add Course</string>
+    <string name="courses_label">Courses</string>
+    <string name="back_label">Back</string>
+    <string name="search_label">Search</string>
+    <string name="course_title_label">Course Title</string>
+    <string name="edit_label">Edit</string>
+    <string name="delete_label">Delete</string>
+    <string name="professor_label">Professor:</string>
+    <string name="assignments_label">Assignments:</string>
+    <string name="add_course_title">Add Course</string>
+    <string name="add_course_name_label">Course Name:</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="submit">Submit</string>
+    <string name="name_colon">Assignment name:</string>
+
+    <!-- Add Assignment Screen -->
+    <string name="assignment_name">Assignment Name:</string>
+    <string name="course_colon">Course:</string>
+    <string name="due_date_label">Due Date:</string>
+    <string name="description_label">Description:</string>
+    <string name="priority_colon">Priority:</string>
+
+    <string name="assignment_detail">Assignment Details</string>
+    <string name="completed_colon">Completed:</string>
+    <string name="mark_completed">Mark Completed</string>
+</resources>

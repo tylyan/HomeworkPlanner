@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.juanyuk.homeworkplanner.MainActivity"
+    android:background="@color/default_background">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tabs_linearLayout"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_label"
+            android:id="@+id/all_label"
+            android:clickable="true"
+            android:layout_margin="9dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:onClick="filterAll"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_label"
+            android:id="@+id/course_label"
+            android:layout_margin="9dp"
+            android:linksClickable="true"
+            android:clickable="true"
+            android:onClick="filterCourse"
+            android:textColor="#FFFFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/priority_label"
+            android:id="@+id/priority_label"
+            android:layout_margin="9dp"
+            android:clickable="true"
+            android:onClick="filterPriority"
+            android:textColor="#FFFFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pending_label"
+            android:id="@+id/pending_label"
+            android:layout_margin="9dp"
+            android:clickable="true"
+            android:onClick="filterPending"
+            android:textColor="#FFFFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:id="@+id/mainButtonBar">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courses_label"
+            android:id="@+id/add_class_button"
+            android:layout_weight="1"
+            android:onClick="startCourses"
+            android:textColor="#ffffff"
+            android:background="@color/button_material_dark"
+            android:layout_margin="5dp"
+            android:nestedScrollingEnabled="true"
+            style="@style/button_style"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_assignment_label"
+            android:id="@+id/add_assignment_button"
+            android:layout_weight="1"
+            android:onClick="newAssignment"
+            android:nestedScrollingEnabled="true"
+            android:textColor="#ffffff"
+            android:background="@color/button_material_dark"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            style="@style/button_style"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_label"
+            android:id="@+id/searchButton"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="search"
+            android:textColor="#ffffff"
+            android:background="@color/button_material_dark"
+            style="@style/button_style"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/assignmentsListView"
+        android:layout_below="@+id/tabs_linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/mainButtonBar"/>
+
+</RelativeLayout>
